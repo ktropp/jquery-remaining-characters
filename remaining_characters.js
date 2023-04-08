@@ -26,7 +26,7 @@
         return this.each(function () {
             var $label = $(d.createElement(options.label.tag));
             var $_this = $(this);
-            var max = $_this.attr("maxlength");
+            var max = $_this.attr("data-maxlength");
             var update = function (c) {
                 var r = max - c;
                 $label.text(options.text.replace('{n}', r));
